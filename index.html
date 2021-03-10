@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>3D Scrolling Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.tiltedpage-scroll.js"></script>
+    <link rel="stylesheet" href="tiltedpage-scroll.css">
+</head>
+
+<body>
+    <div class="main">
+        <section id="header">
+            <div class="content-box">
+                <div class="nav">
+                    <div>
+                        <img src="images/logo.jfif">
+                    </div>
+                    <div class="flex-seperator"></div>
+                    <div>
+                        <button> <i class="fa fa-sign-in"></i> Login</button>
+                    </div>
+                </div>
+                <div class="banner-text">
+                    <h2>Creative Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda repellendus delectus in harum
+                        numquam porro voluptatum ad maxime unde id?</p>
+                    <a href="#">About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="service">
+            <div class="container">
+                <h1>Our Service</h1>
+                <div class="services-row">
+                    <div>
+                        <i class="fa fa-renren"></i>
+                        <h3>Brand <span>Activation</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officia quos, unde
+                            blanditiis
+                            ipsum, ducimus inventore sapiente aliquid pariatur, magni ipsam nulla reprehenderit qui
+                            soluta
+                            adipisci corrupti ipsa vero. Aperiam, illo. Odit accusantium laudantium, soluta voluptate
+                            tenetur blanditiis esse ab?</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-user"></i>
+                        <h3>Employee <span>Activity</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officia quos, unde
+                            blanditiis
+                            ipsum, ducimus inventore sapiente aliquid pariatur, magni ipsam nulla reprehenderit qui
+                            soluta
+                            adipisci corrupti ipsa vero. Aperiam, illo. Odit accusantium laudantium, soluta voluptate
+                            tenetur blanditiis esse ab?</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-meetup"></i>
+                        <h3>Event <span>Organization</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officia quos, unde
+                            blanditiis
+                            ipsum, ducimus inventore sapiente aliquid pariatur, magni ipsam nulla reprehenderit qui
+                            soluta
+                            adipisci corrupti ipsa vero. Aperiam, illo. Odit accusantium laudantium, soluta voluptate
+                            tenetur blanditiis esse ab?</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-video-camera"></i>
+                        <h3>Video <span>Production</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officia quos, unde
+                            blanditiis
+                            ipsum, ducimus inventore sapiente aliquid pariatur, magni ipsam nulla reprehenderit qui
+                            soluta
+                            adipisci corrupti ipsa vero. Aperiam, illo. Odit accusantium laudantium, soluta voluptate
+                            tenetur blanditiis esse ab?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="feature-text">
+                    <h2>Features Are</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="feature-img">
+                    <img src="images/feature.jpeg">
+                </div>
+            </div>
+        </section>
+
+        <section id="touch">
+            <div class="container">
+                <div class="form">
+                    <form>
+                        <input name="name" type="text" placeholder="Your Name" />
+                        <input name="phone" type="number" placeholder="Phone Number" />
+                        <input name="email" type="email" placeholder="Your Email" />
+                        <textarea name="message" placeholder="message" rows="4"></textarea> <br>
+                        <button type="submit">Send To Us</button>
+                    </form>
+                </div>
+                <div class="contact">
+                    <p> <i class="fa fa-map-marker"></i> 81, Bangalore, India</p>
+                    <p> <i class="fa fa-phone"></i> +0123456789</p>
+                    <p> <i class="fa fa-envelope-o"></i> easy_tutorials.com</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="last container">
+            <hr>
+            <p>Made with <i class="fa fa-heart-o"></i> Easy Tutorials</p>
+        </div>
+    </div>
+    <script>
+        $(".main").tiltedpage_scroll({
+            sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+            angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+            opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+            scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+            outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+        });
+    </script>
+
+</body>
+
+</html>
